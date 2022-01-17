@@ -1,0 +1,26 @@
+[package]
+name = "gossip"
+description = "A generic gossip library that uses gossip-based peer sampling"
+version = "0.0.4"
+authors = ["Pouriya Zarbafian <pouriya.zarbafian@gmail.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/pouriya-zarbafian/gossip.git"
+keywords = ["distributed-systems", "gossip-protocol", "peer-sampling", "random-graph", "overlay-network"]
+categories = ["algorithms"]
+readme = "README.md"
+exclude = [
+    "tests/*",
+    ".gitignore",
+    "README.md"
+]
+
+[dependencies]
+log = "0.4.11"
+rand = "0.7.3"
+serde = { version = "1.0.118", features = ["derive"] }
+serde_cbor = "0.11.1"
+blake3 = "0.3.7"
+
+[dev-dependencies]
+log4rs = "1.0.0"
